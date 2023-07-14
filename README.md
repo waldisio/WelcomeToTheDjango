@@ -1,11 +1,12 @@
 # Eventex
 
-Sistema de Eventos encomendado pela Morena
+Sistema de Eventos de exemplo do curso Welcome To The Django (WTTD),
+com deploy para Heroku
 
 ## Como desenvolver?
 
 1. Clone o repositório
-2. Crie um virtualenv com Python 3.5
+2. Crie um virtualenv com Python 3.10
 3. Ative o virtualenv
 4. Instale as dependências
 5. Configure a instância com o .env
@@ -35,6 +36,6 @@ heroku create minhainstancia
 heroku config:push
 heroku config:set SECRET_KEY=`python contrib/secret_gen.py`
 heroku config:set DEBUG=False
-# configuro o email
+# configure o email
 git push heroku master --force
 ```
